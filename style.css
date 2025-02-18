@@ -40,7 +40,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: black;
+    font-weight: 700;
 }
 
 .title {
@@ -49,6 +49,14 @@ a:hover {
     text-align: center;
     justify-content: center;
     padding: 20px;
+}
+
+.navbar-yo {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 50px;
+    z-index: 1;
 }
 
 .return-home {
@@ -92,14 +100,6 @@ a:hover {
     transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-
 .sec-contact {
     background-color: #161616;
     width: 100%;
@@ -129,11 +129,13 @@ a:hover {
 
 .contact-text h2 a {
     color: white;
+    text-decoration: none;
+    font-size: 40px;
 }
 
 .contact-text h2 a:hover {
     cursor: pointer;
-    color: black;
+    font-weight: 700;
 }
 
 .networks {
@@ -145,13 +147,13 @@ a:hover {
 }
 
 .contact-networks a {
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
 .contact-networks a:hover {
     cursor: pointer;
-    color: black;
+    color: red;
 }
 
 .proyect-text {
