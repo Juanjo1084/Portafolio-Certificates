@@ -13,11 +13,6 @@ body {
     background-attachment: fixed;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 h1 {
     font-size: 50px;
     color: white;
@@ -41,6 +36,11 @@ a {
 a:hover {
     cursor: pointer;
     font-weight: 700;
+}
+
+.text {
+    padding: 20px;
+    text-align: justify;
 }
 
 .title {
@@ -93,6 +93,7 @@ a:hover {
 
 .indicator {
     border: solid 1px white;
+    width: 100%;
 }
 
 .diplomas.visible {
@@ -102,18 +103,22 @@ a:hover {
 
 .sec-contact {
     background-color: #161616;
-    width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     position: relative;
     bottom: 0;
     left: 0;
+    justify-content: center;
 }
 
 .div-contact {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 20px;
 }
 
 .contact-text {
@@ -124,13 +129,14 @@ a:hover {
 
 .contact-text h2 {
     color: white;
+    font-size: 30px;
     font-weight: 100;
 }
 
 .contact-text h2 a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .contact-text h2 a:hover {
@@ -147,7 +153,7 @@ a:hover {
 }
 
 .contact-networks a {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
@@ -159,4 +165,14 @@ a:hover {
 .proyect-text {
     font-size: 20px;
     color: white;
+}
+
+@media(max-width:991px){
+    .diplomas {
+        grid-template-columns: 1fr;
+    }
+
+    .texto h2{
+        font-size: 20px;
+    }
 }
